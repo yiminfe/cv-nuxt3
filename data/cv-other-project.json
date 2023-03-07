@@ -9,9 +9,9 @@
         {
           "id": "1",
           "list": [
-            { "text": "个人简历", "href": "https://cv.yiminfe.com" },
+            { "text": "个人简历（Nuxt3）", "href": "https://yiminfe.com" },
             {
-              "text": "ChatGPT 介绍官网",
+              "text": "ChatGPT 介绍官网（Vue3）",
               "href": "https://yiminfe.github.io/CV/"
             },
             { "text": "图书商城首页", "href": "https://yiminfe.github.io/CV/" }

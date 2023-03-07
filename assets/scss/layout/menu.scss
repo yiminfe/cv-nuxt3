@@ -9,11 +9,25 @@
   margin-bottom: -35px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: var(--text-color);
   box-shadow: 2px 2px 8px var(--text-color);
   border-radius: 50%;
-  font-size: 47px;
   cursor: pointer;
   text-align: center;
   z-index: 99999;
+}
+
+.menu-btn {
+  text-align: center;
+  font-size: 40px;
+}
+
+.icon.rotation {
+  display: inline-block;
+  transition: transform 1s ease;
+}
+
+.icon.open {
+  transform: rotate(0.5turn);
 }

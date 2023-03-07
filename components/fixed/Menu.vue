@@ -1,7 +1,7 @@
 <template>
-  <div class="menu-container" @click="debounce(toggleMenu, 100)">
+  <div class="menu-container" @click="toggleMenu">
     <div class="menu-btn">
-      <span class="icon rotation" :ref="menuIconRef">⇦</span>
+      <span class="icon rotation" ref="menuIconRef">🡰</span>
     </div>
   </div>
 </template>
@@ -17,21 +17,19 @@ const emit = defineEmits<{
   (e: 'update:modelValue', modelValue: boolean): void
 }>()
 
-const isOpen = ref(props.modelValue)
-
 const menuIconRef = ref(null)
-
-watch(isOpen, newIsOpen => {
-  emit('update:modelValue', newIsOpen)
-  if (newIsOpen.value) {
-    menuIconRef.value.classList.add('open')
-  } else {
-    menuIconRef.value.classList.remove('open')
-  }
+onMounted(() => {
+  watchEffect(() => {
+    if (props.modelValue) {
+      menuIconRef.value.classList.add('open')
+    } else {
+      menuIconRef.value.classList.remove('open')
+    }
+  })
 })
 
 function toggleMenu() {
-  isOpen.value = !isOpen.value
+  emit('update:modelValue', !props.modelValue)
 }
 </script>
 

@@ -18,6 +18,13 @@
   bottom: -10px;
   width: 0;
   border-right: 1px solid var(--separator-color);
+  display: flex;
+}
+
+.timeline-item-line ul {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 17px;
 }
 
 .timeline-item-line li {

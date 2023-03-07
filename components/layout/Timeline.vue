@@ -2,7 +2,11 @@
   <CommonModule :icon="icon" :title="title" :className="className">
     <div class="timeline">
       <div v-for="item in items" :key="item.id" class="timeline-item">
-        <div class="timeline-item-line"><li></li></div>
+        <div class="timeline-item-line">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
         <div class="timeline-item-content">
           <div class="timeline-item-header">
             <span class="timeline-item-date">{{ item.date }}</span>

@@ -11,7 +11,7 @@
 
 .other-project-outer > li {
   font-weight: bold;
-  margin-bottom: 7px;
+  margin-bottom: 0px;
 }
 
 .other-project-outer li:last-child {
@@ -23,6 +23,8 @@
   flex-direction: column;
   margin-bottom: 15px;
   margin-left: 126px;
+  margin-top: 7px;
+  font-weight: normal;
 }
 .other-project-inner.last {
   margin-bottom: 0px;

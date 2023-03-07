@@ -1,40 +1,39 @@
 <script setup lang="ts">
-definePageMeta({
-  title: '赵依民（资深大前端研发工程师）'
-})
-
 const isOpen = ref(false)
+function changeOpen() {
+  if (isOpen.value) {
+    isOpen.value = false
+  }
+}
 
-// if (process.client) {
-//   window.addEventListener('load', function () {
-//     console.log('load')
-//     setTimeout(() => {
-//       isOpen.value = true
-//     }, 1000)
-
-//     setTimeout(() => {
-//       if (isOpen.value) {
-//         isOpen.value = false
-//       }
-//     }, 5000)
-//   })
-// }
 onMounted(() => {
-  window.addEventListener('scroll', function () {
-    console.log('scroll')
+  window.addEventListener('scroll', changeOpen)
+
+  setTimeout(() => {
+    isOpen.value = true
+  }, 1000)
+
+  setTimeout(() => {
     if (isOpen.value) {
       isOpen.value = false
     }
-  })
+  }, 5000)
+
+  const screenWidth = window.innerWidth
+  alert(screenWidth)
+  const designWidth = 794
+  const scale = screenWidth / designWidth
+  alert(scale)
+  const viewport = document.querySelector('meta[name="viewport"]')
+  viewport.setAttribute(
+    'content',
+    `width=${designWidth}, initial-scale=${scale}`
+  )
 })
 
-if (process.client) {
-  this.$nextTick(() => {
-    this.$nuxt.$once('clientReady', () => {
-      console.log('load')
-    })
-  })
-}
+onUnmounted(() => {
+  window.removeEventListener('scroll', changeOpen)
+})
 </script>
 
 <template>

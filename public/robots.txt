@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.yiminfe.com
+Sitemap: http://www.yiminfe.com
+Sitemap: https://yiminfe.com
+Sitemap: http://yiminfe.com
