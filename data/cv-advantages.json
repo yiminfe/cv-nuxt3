@@ -1,0 +1,31 @@
+{
+  "icon": "💪",
+  "title": "个人优势",
+  "className": "top",
+  "list": [
+    {
+      "id": "1",
+      "text": "熟悉浏览器、网络、Chrome V8 底层原理，深入研究过 Vue 的源码。"
+    },
+    {
+      "id": "2",
+      "text": "全面的技术栈，熟练 Vue、React 及周边库，精通前端工程化和 SSR，拥有小程序 和 Flutter 经验。"
+    },
+    {
+      "id": "3",
+      "text": "具备 Node.js 技术背景，熟悉 Web Server 框架选型和高可用 Server 端架构。"
+    },
+    {
+      "id": "4",
+      "text": "具备技术攻坚、独立研究、架构设计能力，重视产品安全、性能优化、用户体验。"
+    },
+    {
+      "id": "5",
+      "text": "在大厂、创业团队协作中积累了丰富经验，拥有互联网和非互联网产品创业经历，善于沟通总结，敢于挑战。"
+    },
+    {
+      "id": "6",
+      "text": "拥有 ChatGPT 深度研究和应用经验，当前简历使用 ChatGPT 进行设计和开发：<a class=\"info-item\" href=\"https://cv.yiminfe.com\" target=\"_blank\">《个人简历》</a>。"
+    }
+  ]
+}

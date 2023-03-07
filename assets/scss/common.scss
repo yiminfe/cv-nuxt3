@@ -1,0 +1,100 @@
+* {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* 默认主题（黑色） */
+:root {
+  --bg-color: #f6f6ef;
+  --text-color: #151320;
+  --separator-color: #8ab4f8;
+  --module-shadow: #ffffff;
+}
+
+/* 白色主题 */
+.light {
+  --bg-color: #202124;
+  --text-color: #ffffff;
+  --separator-color: #7566c4;
+  --module-shadow: #000000;
+}
+
+body,
+html,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 最外层容器 */
+body {
+  background-color: var(--bg-color);
+  margin: 0px;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  color: var(--bg-color);
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+a {
+  color: var(--separator-color);
+  text-underline-offset: 4px;
+}
+
+/* A4 纸容器 */
+.a4-container {
+  margin: 0px auto;
+  background-color: var(--text-color);
+  width: 794px;
+  padding: 1cm;
+  box-sizing: border-box;
+}
+
+.module-title.page {
+  display: none;
+}
+
+/* 个人优势模块 */
+.module {
+  margin-bottom: 20px;
+}
+
+/* 修改后的样式 */
+.module-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.module-title .icon-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  width: 0px;
+  height: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 20px solid var(--separator-color);
+}
+
+.icon-box.top {
+  border-top: 18px solid var(--separator-color);
+  border-bottom: 22px solid var(--separator-color);
+  border-left: 20px solid var(--separator-color);
+  border-right: 20px solid var(--separator-color);
+}
+
+.module-title .text {
+  font-size: 24px;
+  color: var(--separator-color);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.separator {
+  flex: 1;
+  border-bottom: 1px solid var(--separator-color);
+}

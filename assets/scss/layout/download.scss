@@ -1,0 +1,62 @@
+.download-container {
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  display: flex;
+  width: 180px;
+  height: 430px;
+  margin-left: 427px;
+  margin-bottom: -215px;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 9999;
+  transition: all 1s ease;
+}
+
+.download-container.close {
+  left: 110%;
+  margin-left: 0px;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: var(--text-color);
+  box-shadow: 2px 2px 8px var(--text-color);
+  border-radius: 4px;
+  margin: 15px 0px;
+  color: var(--bg-color);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.download-btn .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.download-btn.chat {
+  flex-direction: column;
+  cursor: auto;
+}
+
+.download-btn.chat img {
+  width: 100%;
+}
+
+.download-btn.chat span {
+  margin-top: 10px;
+}
+
+.icon.rotation {
+  display: inline-block;
+  transition: transform 1s ease;
+}
+
+.icon.open {
+  transform: rotate(0.5turn);
+}

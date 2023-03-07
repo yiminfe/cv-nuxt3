@@ -1,0 +1,71 @@
+/* 时间线样式 */
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 0;
+  padding-left: 45px;
+}
+
+.timeline-item-line {
+  position: absolute;
+  left: 34px;
+  top: 12px;
+  bottom: -10px;
+  width: 0;
+  border-right: 1px solid var(--separator-color);
+}
+
+.timeline-item-line li {
+  margin-top: -12px;
+  margin-left: -2px;
+}
+.timeline-item:last-child .timeline-item-line {
+  border-right: none;
+}
+
+.timeline-item-content {
+  position: relative;
+  padding: 0;
+  min-height: 40px;
+}
+
+.timeline-item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-item-header .timeline-item-date {
+  font-weight: bold;
+}
+
+.timeline-item-header .timeline-item-company {
+  width: 357px;
+}
+
+.timeline-item-header .timeline-item-position {
+  width: 150px;
+  text-align: right;
+}
+.timeline-item-body {
+  margin-left: 1px;
+  padding: 10px 0px 20px 0px;
+  display: flex;
+}
+
+.timeline-item:last-child .timeline-item-body {
+  padding-bottom: 0px;
+}
+
+.timeline-item-achievement {
+  display: flex;
+  padding-left: 125px;
+}
+.timeline-item-achievement ul {
+  list-style-type: circle;
+  margin: 0px;
+}

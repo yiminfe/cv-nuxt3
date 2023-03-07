@@ -1,0 +1,44 @@
+/* 简历标题 */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.header .name {
+  font-weight: bold;
+  margin-right: 30px;
+  line-height: 1;
+}
+
+.header .job-title {
+  font-size: 24px;
+  display: flex;
+}
+
+.job-title .icon {
+  margin-right: 10px;
+}
+
+/* 个人信息 */
+.personal-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.personal-info .info-item {
+  margin: 0 20px 0 10px;
+  white-space: nowrap;
+}
+
+.personal-info p:last-child .info-item {
+  margin-right: 0;
+}
+
+.personal-info p {
+  display: flex;
+}

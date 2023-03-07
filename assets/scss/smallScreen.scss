@@ -1,0 +1,18 @@
+/* 对于小屏幕设备，使用此样式 */
+.small-screen .download-container {
+  margin-left: 87px;
+  margin-bottom: -430px;
+}
+
+.small-screen .download-btn,
+.small-screen .menu-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: 2px 2px 8px var(--bg-color);
+}
+
+.small-screen .menu-container {
+  right: 30px;
+  margin-right: 0px;
+  margin-bottom: -250px;
+}

@@ -1,0 +1,19 @@
+.menu-container {
+  position: fixed;
+  bottom: 50%;
+  right: 50%;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  margin-right: -707px;
+  margin-bottom: -35px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--text-color);
+  box-shadow: 2px 2px 8px var(--text-color);
+  border-radius: 50%;
+  font-size: 47px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 99999;
+}

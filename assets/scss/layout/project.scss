@@ -1,0 +1,58 @@
+.project-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.project-meta {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-name {
+  font-weight: bold;
+  width: 180px;
+  text-align: right;
+}
+
+.project-name ul {
+  margin: 0px;
+  padding-left: 45px;
+}
+
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  width: 523px;
+}
+.project-row {
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: flex-end;
+}
+
+.project-row:last-child {
+  margin-bottom: 0px;
+}
+
+.project-row:last-child .project-list-inline li:last-child {
+  margin-bottom: 0px;
+}
+
+.project-label {
+  font-weight: bold;
+  margin-right: 30.5px;
+}
+
+.project-list-inline {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 507.5px;
+  list-style-type: circle;
+}
+
+.project-list-inline li {
+  margin-bottom: 7px;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "赵依民",
+  "jobTitle": "资深大前端研发工程师",
+  "jobTitleIcon": "👨‍💻",
+  "infoList": [
+    { "icon": "☎️", "href": "tel:18510512011", "text": "185-1051-2011" },
+    {
+      "icon": "📩",
+      "href": "mailto:yiminfe@163.com",
+      "text": "yiminfe@163.com"
+    },
+    { "icon": "🌐", "href": "https://github.com/yiminfe", "text": "GitHub" },
+    { "icon": "👨", "text": "男" },
+    { "icon": "🎂", "text": "1996" }
+  ]
+}

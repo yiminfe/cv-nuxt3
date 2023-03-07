@@ -1,0 +1,29 @@
+.other-project-outer {
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.other-project-outer li {
+  margin-bottom: 7px;
+}
+
+.other-project-outer > li {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.other-project-outer li:last-child {
+  margin-bottom: 0px;
+}
+
+.other-project-inner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-left: 126px;
+}
+.other-project-inner.last {
+  margin-bottom: 0px;
+}

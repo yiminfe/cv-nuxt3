@@ -1,0 +1,139 @@
+{
+  "title": "部分可访问项目",
+  "icon": "🔗",
+  "projects": [
+    {
+      "id": "1",
+      "title": "ChatGPT 开发的项目",
+      "links": [
+        {
+          "id": "1",
+          "list": [
+            { "text": "个人简历", "href": "https://cv.yiminfe.com" },
+            {
+              "text": "ChatGPT 介绍官网",
+              "href": "https://yiminfe.github.io/CV/"
+            },
+            { "text": "图书商城首页", "href": "https://yiminfe.github.io/CV/" }
+          ]
+        },
+        {
+          "id": "2",
+          "list": [
+            { "text": "后台管理系统", "href": "https://cv.yiminfe.com" },
+            {
+              "text": "Markdown 文件管理系统",
+              "href": "https://yiminfe.github.io/CV/"
+            },
+            { "text": "权限管理系统", "href": "https://yiminfe.github.io/CV/" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "个人项目",
+      "links": [
+        {
+          "id": "1",
+          "list": [
+            {
+              "text": "全栈技术合伙人、品牌创始人之一（2019 年）：",
+              "href": null
+            },
+            {
+              "text": "Young 健身 App",
+              "href": "https://www.huaweirom.com/shooting/14890/"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "list": [
+            { "text": "远程前端技术合伙人（2022 年）：", "href": null },
+            {
+              "text": "mazu 中文学习官网（Nuxt2）",
+              "href": "https://humanmazu.com/"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "list": [
+            { "text": "学习项目（2022 年）：", "href": null },
+            {
+              "text": "官网 SSR 渲染（Nuxt3）",
+              "href": "https://ssr.yiminfe.com/home"
+            },
+            {
+              "text": "实现迷你 Vue3 框架",
+              "href": "https://github.com/yiminfe/vue-mini"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "北京学而思教育科技有限公司",
+      "links": [
+        {
+          "id": "1",
+          "list": [
+            { "text": "前端项目主导（2021 年）：", "href": null },
+            {
+              "text": "学而思图书商城",
+              "href": "https://bookh5.xueersibook.com/cicp/store/goods/home"
+            },
+            {
+              "text": "摩比爱识字",
+              "href": "https://bookh5.xueersibook.com/cicp/mobi/home"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "list": [
+            { "text": "前端项目研发（2020 年）：", "href": null },
+            {
+              "text": "学而思微课程",
+              "href": "https://bookh5.xueersibook.com/cicp/platform/shop/index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "北京博雅智学软件股份有限公司",
+      "links": [
+        {
+          "id": "1",
+          "list": [
+            { "text": "App 项目负责人（2019 年）：", "href": null },
+            {
+              "text": "北京小学综素 App、北京中学综素 App",
+              "href": "https://zhsz.bjedu.cn/web/login/index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "北京若为信息技术有限公司",
+      "links": [
+        {
+          "id": "1",
+          "list": [
+            { "text": "iOS 项目负责人（2018 年）：", "href": null },
+            {
+              "text": "口粮 APP",
+              "href": "https://baike.baidu.com/item/%E5%8F%A3%E7%B2%AE/19767215"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

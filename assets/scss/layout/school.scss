@@ -1,0 +1,19 @@
+.school {
+  display: flex;
+  justify-content: space-between;
+}
+.school > ul {
+  padding-left: 45px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.school-honor {
+  padding-left: 211px;
+  list-style-type: circle;
+  margin: 15px 0px;
+}
+
+.school-honor li {
+  margin-bottom: 10px;
+}
