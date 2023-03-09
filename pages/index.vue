@@ -1,38 +1,28 @@
 <script setup lang="ts">
-const isOpen = ref(false)
-function changeOpen() {
-  if (isOpen.value) {
-    isOpen.value = false
+import { isMobile } from '@/common/utils'
+
+const openMenu = useOpenMenu()
+function changeOpenMenu() {
+  if (openMenu.value) {
+    openMenu.value = false
   }
 }
 
+let timer
 onMounted(() => {
-  window.addEventListener('scroll', changeOpen)
-
-  setTimeout(() => {
-    isOpen.value = true
-  }, 1000)
-
-  setTimeout(() => {
-    if (isOpen.value) {
-      isOpen.value = false
+  timer = setTimeout(() => {
+    openMenu.value = true
+    if (isMobile()) {
+      timer = setTimeout(changeOpenMenu, 5000)
     }
-  }, 5000)
-
-  const screenWidth = window.innerWidth
-  alert(screenWidth)
-  const designWidth = 794
-  const scale = screenWidth / designWidth
-  alert(scale)
-  const viewport = document.querySelector('meta[name="viewport"]')
-  viewport.setAttribute(
-    'content',
-    `width=${designWidth}, initial-scale=${scale}`
-  )
+  }, 1000)
+  window.addEventListener('scroll', changeOpenMenu)
 })
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', changeOpen)
+  window.removeEventListener('scroll', changeOpenMenu)
+  clearTimeout(timer)
+  timer = null
 })
 </script>
 
@@ -45,12 +35,8 @@ onUnmounted(() => {
     <LayoutProject className="page"></LayoutProject>
     <LayoutOtherProject></LayoutOtherProject>
     <LayoutSchool></LayoutSchool>
-    <FixedDownload v-model="isOpen"></FixedDownload>
-    <FixedMenu v-model="isOpen"></FixedMenu>
+    <FixedDownload></FixedDownload>
+    <FixedMenu></FixedMenu>
+    <CommonAfterStyle></CommonAfterStyle>
   </div>
 </template>
-
-<style lang="scss">
-@import '@/assets/scss/print.scss';
-@import '@/assets/scss/smallScreen.scss';
-</style>

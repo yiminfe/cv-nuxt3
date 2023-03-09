@@ -8,8 +8,6 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "etag": "^1.8.1",
-    "h3": "^1.5.0",
     "nuxt": "^3.2.3",
     "rollup-plugin-visualizer": "^5.9.0",
     "sass": "^1.58.3",
@@ -17,6 +15,8 @@
     "vite-plugin-compression": "^0.5.1"
   },
   "dependencies": {
+    "install": "^0.13.0",
+    "sanitize.css": "^13.0.0",
     "workbox-window": "^6.5.4"
   }
 }

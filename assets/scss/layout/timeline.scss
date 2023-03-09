@@ -14,23 +14,13 @@
 .timeline-item-line {
   position: absolute;
   left: 34px;
-  top: 12px;
+  top: 10px;
   bottom: -10px;
   width: 0;
   border-right: 1px solid var(--separator-color);
   display: flex;
 }
 
-.timeline-item-line ul {
-  margin: 0px;
-  padding: 0px;
-  margin-left: 17px;
-}
-
-.timeline-item-line li {
-  margin-top: -12px;
-  margin-left: -2px;
-}
 .timeline-item:last-child .timeline-item-line {
   border-right: none;
 }
@@ -51,7 +41,8 @@
 }
 
 .timeline-item-header .timeline-item-company {
-  width: 357px;
+  width: 345px;
+  font-weight: bold;
 }
 
 .timeline-item-header .timeline-item-position {
@@ -59,7 +50,6 @@
   text-align: right;
 }
 .timeline-item-body {
-  margin-left: 1px;
   padding: 10px 0px 20px 0px;
   display: flex;
 }
@@ -70,9 +60,15 @@
 
 .timeline-item-achievement {
   display: flex;
-  padding-left: 125px;
+  padding-left: 166px;
 }
 .timeline-item-achievement ul {
-  list-style-type: circle;
   margin: 0px;
+}
+
+/* 打印时样式，调整A4纸容器的大小 */
+@media print {
+  .timeline-item-line {
+    left: 33.75px;
+  }
 }

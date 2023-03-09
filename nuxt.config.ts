@@ -5,6 +5,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 
 const isProd = process.env.NODE_ENV === 'production'
 const CDN_URL = isProd ? 'https://static.yiminfe.com/cv-nuxt3' : ''
+// const CDN_URL = isProd ? '' : ''
 
 export default defineNuxtConfig({
   builder: 'vite',
@@ -42,10 +43,11 @@ export default defineNuxtConfig({
           rel: 'manifest',
           href: `${CDN_URL}/manifest.webmanifest`
         }
-      ]
+      ],
+      script: [{ src: '/init.js' }]
     }
   },
-  css: ['@/assets/scss/common.scss'],
+  css: ['sanitize.css', '@/assets/scss/common.scss'],
   vite: {
     plugins: [
       visualizer({

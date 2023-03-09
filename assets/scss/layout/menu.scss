@@ -20,7 +20,7 @@
 
 .menu-btn {
   text-align: center;
-  font-size: 40px;
+  font-size: 46px;
 }
 
 .icon.rotation {
@@ -29,5 +29,5 @@
 }
 
 .icon.open {
-  transform: rotate(0.5turn);
+  transform: rotateY(0.5turn);
 }

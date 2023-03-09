@@ -1,8 +1,14 @@
 * {
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none; /* 隐藏默认的实心圆 */
+}
+
+li {
+  position: relative;
 }
 
 /* 默认主题（黑色） */
@@ -10,7 +16,6 @@
   --bg-color: #f6f6ef;
   --text-color: #151320;
   --separator-color: #8ab4f8;
-  --module-shadow: #ffffff;
 }
 
 /* 白色主题 */
@@ -18,21 +23,47 @@
   --bg-color: #202124;
   --text-color: #ffffff;
   --separator-color: #7566c4;
-  --module-shadow: #000000;
 }
 
-body,
-html,
-p {
-  padding: 0;
-  margin: 0;
+ul.disc {
+  > li::before {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid var(--bg-color); /* 设置边框为黑色 */
+    box-sizing: border-box; /* 设置边框大小不影响元素尺寸 */
+    position: absolute;
+    left: -13.5px;
+    top: 50%; /* 将实心圆垂直居中 */
+    transform: translateY(
+      -50%
+    ); /* 使用 transform 属性将实心圆向上平移一半高度 */
+  }
+}
+
+ul.circle {
+  > li::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--bg-color); /* 设置边框为黑色 */
+    border-radius: 50%; /* 设置为圆形 */
+    position: absolute;
+    left: -13.5px;
+    top: 50%;
+    box-sizing: border-box; /* 设置边框大小不影响元素尺寸 */
+    padding: 2px; /* 设置边框的内边距 */
+    transform: translateY(
+      -50%
+    ); /* 使用 transform 属性将实心圆向上平移一半高度 */
+  }
 }
 
 /* 最外层容器 */
 body {
+  font-family: arial, sans-serif;
   background-color: var(--bg-color);
-  margin: 0px;
-  font-family: 'Microsoft YaHei', Arial, sans-serif;
   color: var(--bg-color);
   line-height: 1.5;
   font-size: 14px;
@@ -40,7 +71,10 @@ body {
 
 a {
   color: var(--separator-color);
-  text-underline-offset: 4px;
+  text-decoration: none; /* 去除默认的下划线 */
+  border-bottom: 1px solid var(--separator-color); /* 设置下划线为 1 像素宽的蓝色实线 */
+  padding-bottom: 3px; /* 设置下划线的距离文本的距离 */
+  box-sizing: content-box;
 }
 
 /* A4 纸容器 */

@@ -1,11 +1,11 @@
 <template>
   <CommonModule :icon="icon" :title="title">
     <div class="other-project">
-      <ul class="other-project-outer">
+      <ul class="other-project-outer disc">
         <template v-for="(project, index) in projects" :key="index">
-          <li>
+          <li :id="project.id">
             {{ project.title }}
-            <ul class="other-project-inner">
+            <ul class="other-project-inner circle">
               <li
                 v-for="(link, idx) in project.links"
                 :key="`${link.id}-${idx}`"
@@ -22,11 +22,6 @@
                     target="_blank"
                     >{{ item.text }}</a
                   >
-                  {{
-                    item.href != null && itemIdex !== link.list.length - 1
-                      ? '、'
-                      : ''
-                  }}
                 </template>
               </li>
             </ul>

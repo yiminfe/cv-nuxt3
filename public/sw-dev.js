@@ -1,6 +1,4 @@
-importScripts(
-  'https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js'
-)
+importScripts('https://static.yiminfe.com/common/workbox-sw.js')
 
 self.addEventListener('install', () => self.skipWaiting())
 self.addEventListener('activate', () => self.clients.claim())

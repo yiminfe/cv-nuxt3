@@ -1,6 +1,6 @@
 <template>
   <CommonModule :icon="icon" :title="title" :className="className">
-    <ul class="advantages">
+    <ul class="advantages disc">
       <li v-for="item in list" :key="item.id" v-html="item.text"></li>
     </ul>
   </CommonModule>

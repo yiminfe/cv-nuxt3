@@ -6,7 +6,6 @@ export default defineNuxtPlugin(() => {
     const wb = new Workbox(swFile)
     wb.addEventListener('installed', event => {
       if (event.isUpdate) {
-        alert('update')
         window.location.reload()
       }
     })

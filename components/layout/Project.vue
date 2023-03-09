@@ -4,7 +4,7 @@
       <div v-for="project in projects" :key="project.id" class="project-item">
         <div class="project-meta">
           <div class="project-name">
-            <ul>
+            <ul class="disc">
               <li>{{ project.name }}</li>
             </ul>
           </div>
@@ -20,7 +20,7 @@
             class="project-row"
           >
             <div class="project-label">{{ detail.label }}</div>
-            <ul class="project-list-inline">
+            <ul class="project-list-inline circle">
               <li v-for="(point, index) in detail.points" :key="`${index}`">
                 {{ point }}
               </li>

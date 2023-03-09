@@ -1,43 +1,31 @@
-importScripts(
-  'https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js'
-)
-
-workbox.setConfig({
-  debug: false
-})
-
-const { registerRoute } = workbox.routing
-const { StaleWhileRevalidate, CacheFirst } = workbox.strategies
-const { CacheableResponsePlugin } = workbox.cacheableResponse
-const { BroadcastUpdatePlugin } = workbox.broadcastUpdate
-
-const documentStaleWhileRevalidate = new StaleWhileRevalidate({
-  cacheName: 'document',
-  plugins: [new BroadcastUpdatePlugin()]
-})
-registerRoute(
-  ({ request }) => ['document', 'track'].indexOf(request.destination) > -1,
+importScripts('https://static.yiminfe.com/common/workbox-sw.js'),
+  workbox.setConfig({ debug: !1 })
+const { registerRoute: e } = workbox.routing,
+  { StaleWhileRevalidate: t, CacheFirst: s } = workbox.strategies,
+  { CacheableResponsePlugin: a } = workbox.cacheableResponse,
+  { BroadcastUpdatePlugin: i } = workbox.broadcastUpdate,
+  documentStaleWhileRevalidate = new t({
+    cacheName: 'document',
+    plugins: [new i()]
+  })
+e(
+  ({ request: e }) => ['document', 'track'].indexOf(e.destination) > -1,
   documentStaleWhileRevalidate
 )
-
-const scriptStyleCacheFirst = new CacheFirst({
+const scriptStyleCacheFirst = new s({
   cacheName: 'script-style',
-  plugins: [new CacheableResponsePlugin({ statuses: [200] })]
+  plugins: [new a({ statuses: [200] })]
 })
-
-registerRoute(
-  ({ request }) =>
-    ['script', 'style', 'worker'].indexOf(request.destination) > -1,
+e(
+  ({ request: e }) => ['script', 'style', 'worker'].indexOf(e.destination) > -1,
   scriptStyleCacheFirst
 )
-
-const assetsCacheFirst = new CacheFirst({
+const assetsCacheFirst = new s({
   cacheName: 'assets',
-  plugins: [new CacheableResponsePlugin({ statuses: [200] })]
+  plugins: [new a({ statuses: [200] })]
 })
-
-registerRoute(
-  ({ request }) =>
-    ['audio', 'font', 'image', 'video'].indexOf(request.destination) > -1,
+e(
+  ({ request: e }) =>
+    ['audio', 'font', 'image', 'video'].indexOf(e.destination) > -1,
   assetsCacheFirst
 )

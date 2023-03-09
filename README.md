@@ -1,10 +1,13 @@
-# Nuxt 3 Minimal Starter
+# CV of Eameen Chao
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Performance
+
+Brilliant: https://yiminfe.com
+
+![](https://static.yiminfe.com/GitHub/performance.png?x-oss-process=image/format,webp)
 
 ## Setup
 
-测试修改测试修改
 Make sure to install the dependencies:
 
 ```bash
@@ -39,5 +42,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

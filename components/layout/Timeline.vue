@@ -2,20 +2,20 @@
   <CommonModule :icon="icon" :title="title" :className="className">
     <div class="timeline">
       <div v-for="item in items" :key="item.id" class="timeline-item">
-        <div class="timeline-item-line">
-          <ul>
-            <li></li>
-          </ul>
-        </div>
+        <div class="timeline-item-line"></div>
         <div class="timeline-item-content">
-          <div class="timeline-item-header">
-            <span class="timeline-item-date">{{ item.date }}</span>
-            <span class="timeline-item-company">{{ item.company }}</span>
-            <span class="timeline-item-position">{{ item.position }}</span>
-          </div>
+          <ul class="disc">
+            <li>
+              <div class="timeline-item-header">
+                <span class="timeline-item-date">{{ item.date }}</span>
+                <span class="timeline-item-company">{{ item.company }}</span>
+                <span class="timeline-item-position">{{ item.position }}</span>
+              </div>
+            </li>
+          </ul>
           <div class="timeline-item-body">
             <div class="timeline-item-achievement">
-              <ul>
+              <ul class="circle">
                 <li v-for="achievement in item.achievements" :key="achievement">
                   {{ achievement }}
                 </li>

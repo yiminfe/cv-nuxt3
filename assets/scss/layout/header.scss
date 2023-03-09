@@ -1,7 +1,15 @@
 /* 简历标题 */
+.title-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 80px;
+  justify-content: center;
+  align-items: center;
+}
 .header {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: baseline;
   font-size: 36px;
   margin-bottom: 20px;
@@ -25,7 +33,7 @@
 /* 个人信息 */
 .personal-info {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -33,6 +41,7 @@
 .personal-info .info-item {
   margin: 0 20px 0 10px;
   white-space: nowrap;
+  padding-bottom: 1px;
 }
 
 .personal-info p:last-child .info-item {
@@ -41,4 +50,51 @@
 
 .personal-info p {
   display: flex;
+}
+
+.online-box {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  .online-image {
+    width: 80px;
+    height: 80px;
+    border: none;
+    padding-bottom: 0px;
+  }
+  .online-a {
+    font-size: 10px;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-top: 5px;
+    letter-spacing: 6px;
+    padding-bottom: 2px;
+  }
+}
+
+@media print {
+  .header span.icon {
+    padding-top: 3px;
+  }
+
+  .personal-info span.icon {
+    padding-top: 2px;
+  }
+}
+
+.small-screen .title-box {
+  padding-right: 0px;
+  .online-box {
+    display: none;
+  }
 }

@@ -5,27 +5,27 @@
   "list": [
     {
       "id": "1",
-      "text": "熟悉浏览器、网络、Chrome V8 底层原理，深入研究过 Vue 的源码。"
+      "text": "熟悉网络、浏览器和 Chrome V8 底层原理，深入研究过 Vue 源码。"
     },
     {
       "id": "2",
-      "text": "全面的技术栈，熟练 Vue、React 及周边库，精通前端工程化和 SSR，拥有小程序 和 Flutter 经验。"
+      "text": "精通前端工程化和 CSR、SSR、SSG 架构，熟练 Vue、React 及周边库，具备小程序和 Flutter 经验。"
     },
     {
       "id": "3",
-      "text": "具备 Node.js 技术背景，熟悉 Web Server 框架选型和高可用 Server 端架构。"
+      "text": "拥有 Node.js 项目背景，熟练 Web Server 框架选型和构建高可用 Server 端架构。"
     },
     {
       "id": "4",
-      "text": "具备技术攻坚、独立研究、架构设计能力，重视产品安全、性能优化、用户体验。"
+      "text": "精通前后端性能优化，擅长独立研究新技术和架构设计，注重项目安全、用户体验和多端兼容。"
     },
     {
       "id": "5",
-      "text": "在大厂、创业团队协作中积累了丰富经验，拥有互联网和非互联网产品创业经历，善于沟通总结，敢于挑战。"
+      "text": "具备大厂和创业团队项目协作与管理经验，也有过创业经历，擅长沟通和总结，敢于尝试和挑战。"
     },
     {
       "id": "6",
-      "text": "拥有 ChatGPT 深度研究和应用经验，当前简历用 ChatGPT 进行设计和开发：<a class=\"info-item\" href=\"https://yiminfe.com\" target=\"_blank\">个人简历（Nuxt3）</a>、<a class=\"info-item\" href=\"https://github.com/yiminfe/cv-nuxt3\" target=\"_blank\">源码</a>。"
+      "text": "拥有 ChatGPT 深度研究和使用经验，设计开发了多个项目：<a class=\"info-item\" href=\"https://yiminfe.com\" target=\"_blank\">本人简历</a>（<a class=\"info-item\" href=\"https://github.com/yiminfe/cv-nuxt3\" target=\"_blank\">Nuxt3 源码</a>）、<a class=\"info-item\" href=\"#chatGPT\">其它项目</a>。"
     }
   ]
 }

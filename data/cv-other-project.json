@@ -3,18 +3,42 @@
   "icon": "🔗",
   "projects": [
     {
-      "id": "1",
-      "title": "ChatGPT 开发的项目",
+      "id": "chatGPT",
+      "title": "使用 ChatGPT 设计开发的项目",
       "links": [
         {
           "id": "1",
           "list": [
-            { "text": "个人简历（Nuxt3）", "href": "https://yiminfe.com" },
+            { "text": "本人简历", "href": "https://yiminfe.com" },
             {
-              "text": "ChatGPT 介绍官网（Vue3）",
-              "href": "https://yiminfe.github.io/CV/"
+              "text": "（",
+              "href": null
             },
-            { "text": "图书商城首页", "href": "https://yiminfe.github.io/CV/" }
+            {
+              "text": "Nuxt3 源码",
+              "href": "https://github.com/yiminfe/cv-nuxt3"
+            },
+            {
+              "text": "）、",
+              "href": null
+            },
+            { "text": "ChatGPT 介绍官网", "href": "https://yiminfe.com" },
+            {
+              "text": "（",
+              "href": null
+            },
+            {
+              "text": "Vue3 源码",
+              "href": "https://github.com/yiminfe/cv-nuxt3"
+            },
+            {
+              "text": "）",
+              "href": null
+            },
+            {
+              "text": "。",
+              "href": null
+            }
           ]
         },
         {
@@ -22,10 +46,22 @@
           "list": [
             { "text": "后台管理系统", "href": "https://cv.yiminfe.com" },
             {
+              "text": "、",
+              "href": null
+            },
+            {
               "text": "Markdown 文件管理系统",
               "href": "https://yiminfe.github.io/CV/"
             },
-            { "text": "权限管理系统", "href": "https://yiminfe.github.io/CV/" }
+            {
+              "text": "、",
+              "href": null
+            },
+            { "text": "权限管理系统", "href": "https://yiminfe.github.io/CV/" },
+            {
+              "text": "。",
+              "href": null
+            }
           ]
         }
       ]
@@ -44,6 +80,10 @@
             {
               "text": "Young 健身 App",
               "href": "https://www.huaweirom.com/shooting/14890/"
+            },
+            {
+              "text": "。",
+              "href": null
             }
           ]
         },
@@ -54,6 +94,10 @@
             {
               "text": "mazu 中文学习官网（Nuxt2）",
               "href": "https://humanmazu.com/"
+            },
+            {
+              "text": "。",
+              "href": null
             }
           ]
         },
@@ -66,8 +110,16 @@
               "href": "https://ssr.yiminfe.com/home"
             },
             {
+              "text": "、",
+              "href": null
+            },
+            {
               "text": "实现迷你 Vue3 框架",
               "href": "https://github.com/yiminfe/vue-mini"
+            },
+            {
+              "text": "。",
+              "href": null
             }
           ]
         }
@@ -86,8 +138,16 @@
               "href": "https://bookh5.xueersibook.com/cicp/store/goods/home"
             },
             {
+              "text": "、",
+              "href": null
+            },
+            {
               "text": "摩比爱识字",
               "href": "https://bookh5.xueersibook.com/cicp/mobi/home"
+            },
+            {
+              "text": "。",
+              "href": null
             }
           ]
         },
@@ -98,6 +158,10 @@
             {
               "text": "学而思微课程",
               "href": "https://bookh5.xueersibook.com/cicp/platform/shop/index"
+            },
+            {
+              "text": "。",
+              "href": null
             }
           ]
         }
@@ -114,6 +178,10 @@
             {
               "text": "北京小学综素 App、北京中学综素 App",
               "href": "https://zhsz.bjedu.cn/web/login/index"
+            },
+            {
+              "text": "。",
+              "href": null
             }
           ]
         }
@@ -130,6 +198,10 @@
             {
               "text": "口粮 APP",
               "href": "https://baike.baidu.com/item/%E5%8F%A3%E7%B2%AE/19767215"
+            },
+            {
+              "text": "。",
+              "href": null
             }
           ]
         }

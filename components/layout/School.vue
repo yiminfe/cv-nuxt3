@@ -1,7 +1,7 @@
 <template>
   <CommonModule :icon="icon" :title="title">
     <div class="school">
-      <ul>
+      <ul class="disc">
         <li>
           {{ schoolInfo.school }}
         </li>
@@ -10,7 +10,7 @@
       <span>{{ schoolInfo.duration }}</span>
     </div>
 
-    <ul class="school-honor">
+    <ul class="school-honor circle">
       <li v-for="(item, index) in schoolList" :key="item.id">
         {{ item.text }}
       </li>
